@@ -1,12 +1,8 @@
 .home-page {
+    margin-top: 12%;
 
     .text-zone {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40%;
-        max-height: 90%;
+        
     }
 
     h1 {
@@ -68,5 +64,19 @@ h2 {
     &:hover {
         background: #ffd700;
         color: #333;
+    }
+}
+
+/* lower the size of the logo  */
+@media screen and (max-width: 800px) {
+    
+    .home-page {
+        margin-top: 19%;
+    }
+}
+
+@media screen and (max-width: 1032px) {
+    .home-page {
+        margin-top: 16%;
     }
 }

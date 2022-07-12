@@ -37,23 +37,23 @@ const About = () => {
             />
           </h1>
           <p>
-            After spending the last year working on a project to develop a game
-            with a couple of friends, I've learned a lot about how to develop a
+            After spending the last year working as a game developer
+            with a couple of friends,<br /> I've learned a lot about how to develop a
             project from the ground up and honed my Unity and C# skills.
           </p>
           <p>
             At the moment I'm building a website to showcase some of my work
-            done until now and to refresh and further develop my web development
+            done until now and to refresh<br /> and further develop my web development
             skills.
           </p>
           <p>
             I'm also looking for a role as a frontend developer in a modern and
-            established IT company and for an opportunity to work with the
+            established IT company and for<br /> an opportunity to work with the
             latest technologies on interesting projects.
           </p>
           <p>
             I love to learn and tinker with everything technology related, be it
-            creating games for fun on Unity or developing/delivering fine web
+            creating games for fun on Unity or<br /> developing/delivering fine web
             apps/solutions
           </p>
         </div>
