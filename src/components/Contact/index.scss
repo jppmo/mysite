@@ -1,3 +1,7 @@
+/* .contact-page {
+    width: 400px !important;
+}
+ */
 .contact-form {
     width: 100%;
     margin-top: 20px;
@@ -66,5 +70,11 @@
         border: 1px solid #145369;
         float: right;
         border-radius: 4px;
+
+        &:hover {
+            background: #145369;
+            color: #333;
+            cursor: pointer;
+        }
     }
 }

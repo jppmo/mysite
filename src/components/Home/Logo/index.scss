@@ -1,20 +1,5 @@
 .logo-container {
-    opacity: 0;
-
-    /* svg {
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        transform: rotateZ(30deg) !important;
-    }
-
-    .solid-logo {
-        width: 100%;
-        opacity: 0;
-        transform: rotateZ(30deg);
-        z-index: 1;
-    } */
-
+    
     svg {
         display: block;
         font: 90.5em 'Arial';
@@ -35,7 +20,7 @@
     
     .text-copy:nth-child(1){
         stroke: #2596be;
-        animation-delay: -1;
+        animation-delay: -1s;
     }
     
     .text-copy:nth-child(2){
@@ -69,15 +54,15 @@
 }
  */
 /* lower the size of the logo  */
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     
     .logo-container {
         width: 200px;
     }
-}
+} */
 
-@media screen and (max-width: 1032px) {
+/* @media screen and (max-width: 1032px) {
     .logo-container {
         height: 250px;
     }
-}
+} */

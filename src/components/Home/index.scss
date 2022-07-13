@@ -5,6 +5,10 @@
         
     }
 
+    .logo-container {
+        max-width: 30%;
+    }
+
     h1 {
         color: #fff;
         font-size: 53px;
@@ -67,16 +71,17 @@ h2 {
     }
 }
 
-/* lower the size of the logo  */
-@media screen and (max-width: 800px) {
-    
+@media screen and (max-width: 375px) {
     .home-page {
-        margin-top: 19%;
+        h1{
+            font-size: 43px;
+        }
+        h2 {
+            font-size: 10px;
+        }
     }
-}
 
-@media screen and (max-width: 1032px) {
-    .home-page {
-        margin-top: 16%;
+    .flat-button {
+        margin-left: 22%;
     }
 }
