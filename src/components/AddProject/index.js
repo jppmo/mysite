@@ -48,7 +48,6 @@ const AddProject = () => {
   const handleFileChange = (e) => {
     setProjectImage(null)
     let selected = e.target.files[0] // get first file selected
-    console.log(selected)
 
     if (!selected) {
       setProjectImageError('Please select a file')
@@ -58,13 +57,12 @@ const AddProject = () => {
       setProjectImageError('Selected file must be an image')
       return
     }
-    if (selected.size > 100000) {
-      setProjectImageError('Imae filesize must be less than 100kb')
+    if (selected.size > 1000000) {
+      setProjectImageError('Image filesize must be less than 1000kb')
       return
     }
     setProjectImageError(null)
     setProjectImage(selected)
-    console.log('projectImage updated')
   }
 
   return (

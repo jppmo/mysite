@@ -1,172 +1,183 @@
 .nav-bar {
-    background: #181818;
-    z-index: 3;
+  background: #181818;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  max-height: 100vh;
+  min-height: 460px;
+  bottom: 0;
+  top: 0;
+
+  .logo {
+    display: block;
+    padding: 12px 12px;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+
+      border: 2px solid #9925be;
+
+      &.sub-logo {
+        width: 50px;
+        margin-left: 6px;
+      }
+    }
+  }
+
+  nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    max-height: 100vh;
-    min-height: 460px;
-    bottom: 0;
-    top: 0;
-    
-    .logo {
+    align-items: center;
+
+    a {
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: #2596be;
+
+        svg {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &::after {
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
+    a.resume-link {
+      &:after {
+        content: 'RESUME';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #2596be;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    margin-bottom: 30%;
+
+    li {
+      a {
+        padding: 7px 0;
         display: block;
-        padding: 12px 12px;
+        font-size: 15px;
+        line-height: 16px;
 
-        img {
-            display: block;
-            margin: 8px auto;
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            object-fit: cover;
-
-            border: 2px solid #9925be;
-
-            &.sub-logo {
-                width: 50px;
-                margin-left: 6px;
-            }
+        &:hover svg {
+          color: #2596be;
         }
+      }
     }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-
-        a {
-            font-size: 22px;
-            color: #4d4d4e;
-            display: block;
-            line-height: 51px;
-            height: 51px;
-            position: relative;
-            text-decoration: none;
-
-            i {
-                transition: all 0.3s ease-out;
-            }
-
-            &:hover {
-                color: #2596be;
-
-                svg {
-                    opacity: 0;
-                }
-
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            &:after {
-                content: '';
-                font-size: 9px;
-                letter-spacing: 2px;
-                justify-content: center;
-                position: absolute;
-                bottom: 0;
-                display: flex;
-                width: 100%;
-                align-items: center;
-                align-content: center;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            &:first-child {
-                &::after {
-                    content: 'HOME';
-                }
-            }
-        }
-
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-            }
-        }
-
-        a.portfolio-link {
-            &:after {
-                content: 'PORTFOLIO';
-            }
-        }
-
-        a.contact-link {
-            &:after {
-                content: 'CONTACT';
-            }
-        }
-
-        a.active {
-            svg {
-                color: #2596be;
-            }
-        }
-    }
-
-    ul {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        gap: 10px;
-        padding: 0;
-        list-style: none;
-        align-items: center;
-        margin: 0;
-        margin-bottom: 30%;
-
-        li {
-            a {
-                padding: 7px 0;
-                display: block;
-                font-size: 15px;
-                line-height: 16px;
-
-                &:hover svg {
-                    color: #2596be;
-                }
-            }
-        }
-    }
+  }
 }
-
 
 /* change the items inside the navbar to horizontal */
 @media screen and (max-width: 800px) {
-    .nav-bar {
-        flex-direction: row;
-        justify-content: space-around;
-        position: initial;
-        right: 0;
-        max-height: auto;
-        min-height: auto;
+  .nav-bar {
+    flex-direction: row;
+    justify-content: space-around;
+    position: initial;
+    right: 0;
+    max-height: auto;
+    min-height: auto;
 
-        .logo img {
-    
-            /* &.sub-logo {
+    .logo img {
+      /* &.sub-logo {
                 width: 38px;
             } */
-        }
-
-        nav {
-            flex-direction: row;
-            gap: 50px;
-        }
-
-        ul {
-            display: none;
-            flex-direction: row;
-            gap: 20px;
-            margin: 0;
-            margin-right: 5%;
-        }
     }
 
-    
+    nav {
+      flex-direction: row;
+      gap: 50px;
+    }
+
+    ul {
+      display: none;
+      flex-direction: row;
+      gap: 20px;
+      margin: 0;
+      margin-right: 5%;
+    }
+  }
+}
+
+@media print {
+  .no-printme {
+    display: none;
+  }
+  .printme {
+    display: block;
+  }
 }

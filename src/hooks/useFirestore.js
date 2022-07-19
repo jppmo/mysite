@@ -60,13 +60,17 @@ export const useFirestore = (collection) => {
 
     try {
       const createdAt = timestamp.fromDate(new Date())
+      let addedDocument
+      if (image) {
+        // upload project image
+        const uploadPath = `project-image/${uid}/${doc.title}`
+        const imageUploaded = await projectStorage.ref(uploadPath).put(image)
+        const imageUrl = await imageUploaded.ref.getDownloadURL()
 
-      // upload project image
-      const uploadPath = `project-image/${uid}/${doc.title}`
-      const imageUploaded = await projectStorage.ref(uploadPath).put(image)
-      const imageUrl = await imageUploaded.ref.getDownloadURL()
-
-      const addedDocument = await ref.add({ ...doc, imageUrl, createdAt })
+        addedDocument = await ref.add({ ...doc, imageUrl, createdAt })
+      } else {
+        addedDocument = await ref.add({ ...doc, createdAt })
+      }
       dispatchIfNotCancelled({ type: 'ADDED_DOCUMENT', payload: addedDocument })
     } catch (err) {
       dispatchIfNotCancelled({ type: 'ERROR', payload: err.message })

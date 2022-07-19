@@ -2,10 +2,11 @@ import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
-import portfolioData from '../../data/portfolio.json'
+import { useCollection } from '../../hooks/useCollection'
 
 const Portfolio = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const { documents, error } = useCollection('projects')
 
   useEffect(() => {
     let timeoutId = setTimeout(() => {
@@ -21,20 +22,25 @@ const Portfolio = () => {
   const renderPortfolio = (portfolio) => {
     return (
       <div className="images-container">
-        {portfolio.map((proj, idx) => {
-          return (
-            <div className="image-box" key={idx}>
-              <img className="project-image" src={proj.cover} alt="cover" />
-              <div className="content">
-                <p className="title">{proj.title}</p>
-                <h4 className="description">{proj.description}</h4>
-                <button className="btn" onClick={() => window.open(proj.url)}>
-                  View
-                </button>
+        {portfolio &&
+          portfolio.map((proj, idx) => {
+            return (
+              <div className="image-box" key={idx}>
+                <img
+                  className="project-image"
+                  src={proj.imageUrl}
+                  alt="cover"
+                />
+                <div className="content">
+                  <p className="title">{proj.title}</p>
+                  <h4 className="description">{proj.description}</h4>
+                  <button className="btn" onClick={() => window.open(proj.url)}>
+                    View
+                  </button>
+                </div>
               </div>
-            </div>
-          )
-        })}
+            )
+          })}
       </div>
     )
   }
@@ -49,7 +55,7 @@ const Portfolio = () => {
             idx={15}
           />
         </h1>
-        <div>{renderPortfolio(portfolioData.portfolio)}</div>
+        <div>{renderPortfolio(documents)}</div>
       </div>
       <Loader type="pacman" />
     </>

@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import Login from './components/Login'
 import AddProject from './components/AddProject'
+import Resume from './components/Resume'
 
 function App() {
   const { authIsReady, user } = useAuthContext()
@@ -23,6 +24,7 @@ function App() {
               <Route path="about" element={<About />} />
               <Route path="contact" element={<Contact />} />
               <Route path="portfolio" element={<Portfolio />} />
+              <Route path="resume" element={<Resume />} />
               <Route
                 path="login"
                 element={user ? <Navigate to="/" /> : <Login />}

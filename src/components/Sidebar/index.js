@@ -12,9 +12,11 @@ import {
   faFaceMeh,
   faFaceGrin,
   faPlus,
+  faBook,
 } from '@fortawesome/free-solid-svg-icons'
 import {
   faGithub,
+  faGitlab,
   faLinkedin,
   faSkype,
 } from '@fortawesome/free-brands-svg-icons'
@@ -24,7 +26,7 @@ const Sidebar = () => {
   const { user } = useAuthContext()
 
   return (
-    <div className="nav-bar">
+    <div className="nav-bar no-printme">
       <Link className="logo" to="/">
         <img src={ProfilePicture} alt="lady" title="lady!" />
         {/* <img src={LogoS} alt="logo" />
@@ -79,6 +81,15 @@ const Sidebar = () => {
         <NavLink
           exact="true"
           activeclassname="active"
+          className="resume-link"
+          to="/resume"
+        >
+          <FontAwesomeIcon icon={faBook} color="#4d4d4e" />
+        </NavLink>
+
+        <NavLink
+          exact="true"
+          activeclassname="active"
           className="contact-link"
           to="/contact"
         >
@@ -87,22 +98,26 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
+          <a target="_blank" rel="noreferrer" href="https://github.com/jppmo">
+            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://gitlab.com/joaoliveira1990"
+          >
+            <FontAwesomeIcon icon={faGitlab} color="#4d4d4e" />
+          </a>
+        </li>
+        <li>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/jppmo/"
           >
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://github.com/jppmo">
-            <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-          </a>
-        </li>
-        <li>
-          <a target="_blank" rel="noreferrer" href="https://github.com/jppmo">
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
           </a>
         </li>
       </ul>
