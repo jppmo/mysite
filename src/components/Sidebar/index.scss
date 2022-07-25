@@ -133,9 +133,12 @@
         display: block;
         font-size: 15px;
         line-height: 16px;
-
+        svg {
+          transition: transform 0.25s, opacity 0.25s;
+        }
         &:hover svg {
           color: #2596be;
+          transform: rotate(360deg);
         }
       }
     }
