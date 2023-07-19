@@ -50,7 +50,7 @@ const Home = () => {
               idx={22}
             />
           </h1>
-          <h2>Frontend Developer / Unity Tinkerer / Dog Owner</h2>
+          <h2>Fullstack Developer / AI Enthusiast / Dog Owner</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>

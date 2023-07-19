@@ -29,6 +29,7 @@ const Resume = () => {
             PRINT
           </span> */}
           <h1>
+            <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={'Profile'.split('')}
@@ -41,6 +42,7 @@ const Resume = () => {
             <br className="no-printme" />I love to learn, work cooperatively
             with like-minded individuals and deliver great solutions!
           </p>
+          <br/>
           <h1>
             <AnimatedLetters
               letterClass={letterClass}

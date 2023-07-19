@@ -37,23 +37,21 @@ const About = () => {
             />
           </h1>
           <p>
-            After spending the last year working as a game developer
-            with a couple of friends,<br /> I've learned a lot about how to develop a
-            project from the ground up and honed my Unity and C# skills.
+            After spending the last year working as a backend developer
+            for AirTrain,<br /> I've learned what it's like to work with amazing
+            and talented people. An example of good teamwork and getting work done with aggressive deadlines
           </p>
           <p>
-            At the moment I'm building a website to showcase some of my work
-            done until now and to refresh<br /> and further develop my web development
-            skills.
+            At the moment I'm learning all about AI, I'm exploring chatgpt, midjourney and stable-diffusion.<br /> I also made a summarizer app, hosted on my computer!
           </p>
           <p>
-            I'm also looking for a role as a frontend developer in a modern and
+            I'm also looking for a role as a backend/full stack developer in a modern and
             established IT company and for<br /> an opportunity to work with the
             latest technologies on interesting projects.
           </p>
           <p>
             I love to learn and tinker with everything technology related, be it
-            creating games for fun on Unity or<br /> developing/delivering fine web
+            creating stuff with AI or<br /> developing/delivering fine web
             apps/solutions
           </p>
         </div>
