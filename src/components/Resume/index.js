@@ -36,7 +36,7 @@ const Resume = () => {
             />
           </h1>
           <p>
-            Programmer with 3+ years of experience, helped companies by solving
+            Programmer with 5+ years of experience, helped companies by solving
             problems with open source technologies.{' '}
             <br className="no-printme" />I love to learn, work cooperatively
             with like-minded individuals and deliver great solutions!
@@ -48,7 +48,7 @@ const Resume = () => {
               idx={15}
             />
           </h1>
-          <h3>Full Stack Developer at Foremost, Santarém</h3>
+          <h3>Full Stack Developer at Foremost, Santarém, Portugal</h3>
           <h4>December 2017 — December 2019</h4>
           <ul>
             <li>
@@ -65,7 +65,7 @@ const Resume = () => {
             </li>
           </ul>
           <br className="no-printme" />
-          <h3>Full Stack Developer at Aruki, Lisbon</h3>
+          <h3>Full Stack Developer at Aruki, Lisbon, Portugal</h3>
           <h4>February 2020 — August 2020</h4>
           <ul>
             <li>
@@ -75,8 +75,8 @@ const Resume = () => {
             <li>Created api endpoints on the server using Elixir</li>
           </ul>
           <br className="no-printme" />
-          <h3>Game Programmer at Innominate Studios, Santarém</h3>
-          <h4>October 2020 — October 2021</h4>
+          <h3>Game Programmer at Innominate Studios, Santarém, Portugal</h3>
+          <h4>October 2020 — March 2022</h4>
           <p>
             Won a scholarship for developing a multiplayer top down action rpg
             game in Unity.
@@ -93,6 +93,24 @@ const Resume = () => {
               Used zero tier one to build a test environment to play with
               friends online
             </li>
+          </ul>
+
+          <br className="no-printme" />
+          <h3>Backend/Fullstack developer at AirTrain, Germany (Remote)</h3>
+          <h4>August 2022 - February 2023</h4>
+          <ul>
+            <li>
+            Developed backend for a Learning Management System in NestJs and Typescript.
+            </li>
+            <li>Planned and created the ORM database structure in ParseServer.</li>
+            <li>Developed on a microservice structured environment using gRpc for communications between servers.</li>
+            <li>Worked with sockets for real-time communication between server and clients.</li>
+            <li>Implemented and tested Endpoints on the server REST API.</li>
+            <li>Implemented Sentry.io on the backend for monitoring.</li>
+            <li>Implemented video chat apis on both backend and react frontend (ZoomApi, CometChat).</li>
+            <li>Worked on an atomically structured react front end, fixing bugs and helping out with development when needed.</li>
+            <li>Used Postman for extensive testing in both environments.</li>
+            <li>Helped with backend operations for cloud hosting in (atlassian, aws, s3, CI/CD, gitlab).</li>
           </ul>
 
           <h1>
@@ -132,19 +150,32 @@ const Resume = () => {
               idx={15}
             />
           </h1>
-          <h3>Master Unity By Building 6 Fully Featured Games From Scratch</h3>
-          <h4>December 2016 — February 2017</h4>
+          
+          <h3>NestJS: The Complete Developer's Guide</h3>
+          <h4>July 2022 — August 2022</h4>
+
           <br />
-          <h3>The Web Developer Bootcamp 2017, Udemy</h3>
-          <h4>December 2016 — March 2017</h4>
+          <h3>Build Web Apps with React & Firebase</h3>
+          <h4>February 2022 — March 2022</h4>
+
+          <br />
+          <h3>The Ultimate Guide To Video Game Optimization, Udemy</h3>
+          <h4>October 2021 — November 2021</h4>
+
           <br />
           <h3>
             Learn Unity's Entity Component System to Optimise Your Games, Udemy
           </h3>
           <h4>October 2021 — November 2021</h4>
+
           <br />
-          <h3>The Ultimate Guide To Video Game Optimization, Udemy</h3>
-          <h4>October 2021 — November 2021</h4>
+          <h3>The Web Developer Bootcamp 2017, Udemy</h3>
+          <h4>December 2016 — March 2017</h4>
+
+          <br />
+          <h3>Master Unity By Building 6 Fully Featured Games From Scratch</h3>
+          <h4>December 2016 — February 2017</h4>
+
         </div>
         <a
           className="print-button"
