@@ -181,7 +181,7 @@ const Resume = () => {
           className="print-button"
           target="_blank"
           rel="noreferrer"
-          href="https://firebasestorage.googleapis.com/v0/b/myportfolio-a115d.appspot.com/o/cv-joaoliveira.pdf?alt=media&token=e2e48903-b2f2-48e7-b7d4-a7672338b03f"
+          href="https://firebasestorage.googleapis.com/v0/b/myportfolio-a115d.appspot.com/o/cv-joaoliveira.pdf?alt=media&token=cdab517b-3eb8-4b3a-9fde-b6c17b28f533"
         >
           Download pdf
         </a>
