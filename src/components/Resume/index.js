@@ -107,7 +107,7 @@ const Resume = () => {
             <li>Worked with sockets for real-time communication between server and clients.</li>
             <li>Implemented and tested Endpoints on the server REST API.</li>
             <li>Implemented Sentry.io on the backend for monitoring.</li>
-            <li>Implemented video chat apis on both backend and react frontend (ZoomApi, CometChat).</li>
+            <li>Implemented video chat apis on both backend and react frontend (ZoomApi, CometChat, WhereBy).</li>
             <li>Worked on an atomically structured react front end, fixing bugs and helping out with development when needed.</li>
             <li>Used Postman for extensive testing in both environments.</li>
             <li>Helped with backend operations for cloud hosting in (atlassian, aws, s3, CI/CD, gitlab).</li>
